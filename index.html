@@ -1,41 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Ediolausson | Researcher</title>
+    <meta name="description" content="Academic profile and project portfolio of Thomas Ediolausson.">
+    
+    <!-- Google Fonts for a sleek, modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello World</h1>
-  <p>Thomas</p>
+    <header class="hero">
+        <div class="container">
+            <h1 class="name">Thomas Ediolausson</h1>
+            <p class="title">Researcher / PhD Student</p>
+            <p class="bio">
+                Hi! I am a researcher focusing on [Your Field, e.g., Medical Image Reconstruction, Machine Learning, etc.]. 
+                My work revolves around [Brief 1-2 sentence description of your main research interests].
+            </p>
+            <div class="social-links">
+                <a href="mailto:your.email@example.com" aria-label="Email">Email</a>
+                <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">Google Scholar</a>
+                <a href="https://github.com/thomasediolausson" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+                <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+        </div>
+    </header>
 
-  <h2>About Me</h2>
-  <p>Hi, I'm Thomas.</p>
+    <main class="container">
+        <section id="projects" class="projects-section">
+            <h2>Selected Projects</h2>
+            
+            <!-- Project 1 -->
+            <article class="project-card">
+                <div class="project-video">
+                    <!-- Video element: autoplay, muted, and playsinline are required for smooth mobile playback -->
+                    <video src="assets/project1.mp4" autoplay loop muted playsinline aria-label="Video demonstration of Project 1"></video>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Project Name 1: Advanced MRI Reconstruction</h3>
+                    <p class="project-venue"><em>Published in Top Conference / Journal (2024)</em></p>
+                    <p class="project-description">
+                        A brief description of the project. We developed a novel method for time-averaged alternating reconstruction that significantly reduces motion artifacts while maintaining high spatial resolution. 
+                    </p>
+                    <div class="project-links">
+                        <a href="https://arxiv.org/abs/..." class="btn" target="_blank" rel="noopener noreferrer">📄 Paper</a>
+                        <a href="https://github.com/..." class="btn btn-outline" target="_blank" rel="noopener noreferrer">💻 Code</a>
+                    </div>
+                </div>
+            </article>
 
-  <h2>Projects</h2>
-  <ul>
-    <li><a href="#project1">Project 1</a> - A brief description of your project.</li>
-    <li><a href="#project2">Project 2</a> - A brief description of your project.</li>
-  </ul>
+            <!-- Project 2 -->
+            <article class="project-card">
+                <div class="project-video">
+                    <video src="assets/project2.mp4" autoplay loop muted playsinline aria-label="Video demonstration of Project 2"></video>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Project Name 2: Dynamic Motion Warping</h3>
+                    <p class="project-venue"><em>Under Review (2025)</em></p>
+                    <p class="project-description">
+                        This project explores non-rigid motion fields for robust medical imaging. By estimating sparse displacement fields, we achieve state-of-the-art artifact suppression.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://arxiv.org/abs/..." class="btn" target="_blank" rel="noopener noreferrer">📄 Paper</a>
+                        <a href="https://github.com/..." class="btn btn-outline" target="_blank" rel="noopener noreferrer">💻 Code</a>
+                        <a href="#" class="btn btn-outline" target="_blank" rel="noopener noreferrer">📊 Dataset</a>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Add more <article class="project-card"> here as needed -->
 
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:thomas@example.com">thomas@example.com</a></p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/thomas" target="_blank">linkedin.com/in/thomas</a></p>
+        </section>
+    </main>
 
-  <h2>Media</h2>
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Thomas Ediolausson. Designed for accessibility.</p>
+        </div>
+    </footer>
 
-  <!-- Adding an MP4 video -->
-  <h3>Project Demo</h3>
-  <video controls width="600">
-    <source src="project-demo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-  <!-- Adding a GIF -->
-  <h3>Animated Preview</h3>
-  <img src="preview.gif" alt="Animated preview of the project" width="600">
-
-  <!-- Adding an image -->
-  <h3>Project Screenshot</h3>
-  <img src="screenshot.jpg" alt="Screenshot of the project" width="600">
-
+    <script>
+        // Automatically update the footer year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
